@@ -13,42 +13,45 @@
     <input type="email"/><br>
     Date of Birth: <input type="date"/><br>
     <p>
-      Credit Card Type: <br>
-      <input type="radio" name="card"/><img src="IMG/visa.png" width="60"> <br>  
-      <input type="radio" name="card"/><img src="IMG/master.png" width="60"> <br>
-      <input type="radio" name="card"/><img src="IMG/amex.png" width="60"> <br>
-      <input type="radio" name="card"/><img src="IMG/disc.png" width="60"> <br>
+        <fieldset>
+          Credit Card Type: <br>
+          <input type="radio" name="card"/><img src="IMG/visa.png" width="60"> <br>  
+          <input type="radio" name="card"/><img src="IMG/master.png" width="60"> <br>
+          <input type="radio" name="card"/><img src="IMG/amex.png" width="60"> <br>
+          <input type="radio" name="card"/><img src="IMG/disc.png" width="60"> <br>
+          <input type="number" length="16"/> Credit Card Number <br>
+          <p>
+            Expiry Year: 
+            <select>
+              <option selected="selected">2019</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+            </select><br>
+          </p>  
+            Expiry Month:
+            <select>
+              <option selected="selected">Select Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+          </select>
+          </p>
+
+        </fieldset> 
     </p>
-    <p>  
-      <input type="number" length="16"/> Credit Card Number <br>
-    </p>
-    <p>
-      Expiry Year: 
-      <select>
-        <option selected="selected">2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-      </select><br>
-    </p>  
-      Expiry Month:
-      <select>
-        <option selected="selected">Select Month</option>
-        <option>January</option>
-        <option>February</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>August</option>
-        <option>September</option>
-        <option>October</option>
-        <option>November</option>
-        <option>December</option>
-    </select>
-    </p>
+  
+    
     <p>
       Additional Notes: <br>
       <textarea cols="60" rows="5">
