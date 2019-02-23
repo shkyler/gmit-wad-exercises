@@ -13,7 +13,10 @@
     body{
       background-color: blue;
     }
-  
+    #script{
+      background-color: dimgrey;
+    }
+
   </style>
 </head>
 <body>
@@ -76,5 +79,11 @@
     </p>
   </form>
 </body>
-
+<div id="script">
+  <script>
+      var num1 = Number(prompt("Please enter a number: "));
+      var num2 = Number(prompt("Please enter another number:"));
+      document.write("The product of those numbers is: " + num1*num2);
+  </script>  
+</div>
 </html>
