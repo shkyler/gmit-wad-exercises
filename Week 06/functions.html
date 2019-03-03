@@ -10,8 +10,10 @@
 </body> 
 
 <script>
+ 
 function helloWorld(){
-  alert("Hello World");
+  var myName = prompt("What is your name?") 
+  alert("Hello " + myName );
 }
 
 function getArea(width, height){
@@ -22,11 +24,12 @@ function area(width, height){
   return width * height;
 }
 
-alert(area(3,9));
 
-//var num1 = 10;
-//var num2 = 6;
-//getArea(num1,num2)
+
+var num1 = Number(prompt("Give me a number:"));
+var num2 = Number(prompt("Give me another:"));
+
+document.write("The product of those is: " + area(num1,num2));
 </script>
 
 </html>
