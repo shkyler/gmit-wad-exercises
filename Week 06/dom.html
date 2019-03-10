@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Test</title>
+  </head>
+  <body>
+    <p id="para">
+        Join us this afternoon for live blog coverage of our Premier League clash against Man Utd - kick off 16.30
+        <br>
+        We've got up to the second live text commentary, updates, goal clips, observations and occasionally witty asides. If you want to join the chat, register an Arseblog Live account.
+        <br>
+        To do that, go to Arseblog Live - click login on the top right, and then choose "sign up" to complete the process with your username/password, or you can use your Twitter, Facebook or Google account to register.
+        <br>
+        You can also get Twitter updates of key events - goals, cards, substitutions etc - by following 
+        <br>
+        <button onclick="change()">Change Me!</button>
+    </p>
+  </body>
+
+  <script>
+  function change(){
+    x = document.getElementById("para");
+    x.style.color = "white";
+    x.style.background = "pink";
+    x.style.border = "3px dashed black";
+    x.style.fontFamily = "Arial";
+  }
+
+  </script>
+</html>
