@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Test</title>
+</head>
+<body>
+  <input id="box1">
+  <input id="box2">
+  <button onclick="add()">Add</button>
+</body> 
+
+<script>
+function add(){
+  var num1 = Number(document.getElementById("box1").value);
+  var num2 = Number(document.getElementById("box2").value);
+  alert(num1 + num2);
+}
+  
+</script>
+
+</html>
