@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>Guesing Game</h1>
+    <p id="par"></p> 
+
+  </body> 
+  
+  <script>
+    var ans = Math.ceil(Math.random() * 10);
+    var guess = Number(prompt("Please guess a number between 1 an 10"));
+
+    if (ans == guess){
+      document.getElementById("par").innerHTML = "Good Guess!";
+      document.write(ans)
+    }
+    else{
+      document.getElementById("par").innerHTML = "Sorry, Wrong Number";
+      document.write(ans)
+    }
+  </script>
+  
+  </html>
+</body> 
+
+</html>

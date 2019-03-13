@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>Guessing Game</h1>
+    <p id="par"></p> 
+
+  </body> 
+  
+  <script>
+    var ans = Math.ceil(Math.random() * 100);
+    var guess = Number(prompt("Please guess a number between 1 an 100"));
+    var isCorrect = false; 
+    var count = 0;
+
+    while (count < 6 && !isCorrect){
+     if (ans == guess){
+        isCorrect = true;
+      }
+      else if (ans < guess){
+        guess = Number(prompt("Too High, Try again!"))
+      }
+      else{
+        guess = Number(prompt("Too Low, Try again!"));
+      }
+    count +=1;  
+    }
+  
+  if(isCorrect){
+    document.getElementById("par").innerHTML = "Congrats, correct answer is " + ans;
+  }
+  else{
+    document.getElementById("par").innerHTML = "Sorry, out of guesses!, correct answer was " + ans;
+  }  
+  </script>
+  
+  </html>
+</body> 
+
+</html>
